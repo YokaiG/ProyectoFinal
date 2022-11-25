@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/suscripcion.css">
+    <title>Suscripcion</title>
+</head>
+<body>
+
+    <ul>
+        <li><a href="suscripcion.html">Formulario</a></li>
+        <li><a href="Nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="index1.html">Inicio</a></li>
+      </ul>
+      
+
+<h1><span>suscripcion</span></h1>
+
+    <div class="contenedor">
+     <p>Con esta suscripcion podras hacer tus pedidos directamnete con nosotros y tambien recibiras pormociones exclusivas nomas por estar suscritos con nosotros </p>
+    
+     <content class="formuario">
+        <form class="alumnos" action="guardar.php" method="post" id="contact_form" runat="server" enctype="multipart/form-data">
+            <div>
+                <ul >
+                    <li>
+                        <h2>Suscripcion</h2>
+                        <span class="requiered_notification">Noticias</span>
+                    </li>
+
+                    <li>
+                        <label for="Nombre">Nombre:</label>
+                        <input type="text" name="Nombre" placeholder="Nombre" value="" maxlength="30" required />
+                        <span class="form_hint">Formato correcto: "Alejandro"</span>
+                    </li>
+
+                    <li>
+                        <label for="Apellido">Apellidos:</leabel>
+                            <input type="text" name="Apellido" placeholder="Apellidos" value="" maxlength="30" required />
+                            <span class="form_hint">Formato correcto: "Mocoso Tena"</span>
+                    </li>
+
+                    <li>
+                        <label for="Telefono">Telefono:</label>
+                        <input type="number" name="Telefono" placeholder="656981435" value="" maxlength="30" required />
+                        <span class="form_hint">Formato correcto: "565987412"</span>
+                    </li>
+
+                    <li>
+                        <button class="submit" type="submit">Enviar</button>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </content>
+     
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>

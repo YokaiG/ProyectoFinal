@@ -1,0 +1,86 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+}
+
+body{
+    /*background-color: #ecf4fb;*/
+    background-image: url("/img/seamless-pattern-with-burger-icons-black-and-white-hamburger-background-doodle-burger-illustration-free-vector.jpg");
+    justify-content: center;
+    align-items: center;
+}
+
+h1::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    z-index: -1;
+}
+
+h1 span{
+    background-color: #f8f8f8;
+    padding: 0 15px;
+}
+
+/*------------------------------------------*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(138, 73, 21);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(58, 23, 7);
+  }
+  /*---------------------------------------------------*/
+ .contenedor{
+    min-height: 150px;
+    width: 80%;
+    background-color: rgba(71, 42, 9, 0.719);
+    margin: 0 auto;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+ }
+
+ img{
+    padding-top: 2%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+ }
+
+ .contenedor>p{
+  margin-left: 10%;
+  margin-right: 10%;
+ }

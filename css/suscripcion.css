@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+}
+
+body{
+    background-image: url("/img/seamless-pattern-with-burger-icons-black-and-white-hamburger-background-doodle-burger-illustration-free-vector.jpg");
+    justify-content: center;
+    align-items: center;
+}
+
+h1::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    z-index: -1;
+}
+
+h1 span{
+    background-color: #ecf4fb;
+    padding: 0 15px;
+}
+
+/*------------------------------------------*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  /*---------------------------------------------------*/
+ .contenedor{
+    min-height: 150px;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.473);
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+ }
+ .contenedor>p{
+  margin-left: 10%;
+  margin-right: 10%;
+ }
+
+ img{
+    padding-top: 2%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+ }
+/*-----------------------Formulario----------------------*/
+
+
+
+.menu {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 0;
+  padding: .5px;
+}
+.menu .p {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  font-size: inherit;
+}
+.menu .p .o {
+  font: normal 14px/28px Ubuntu;
+  color: rgb(180, 40, 40);
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+.ink {
+  display: block;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  border-radius: 100%;
+  transform: scale(0);
+}
+.ink.animate {
+  animation: ripple 0.65s linear;
+}
+@keyframes ripple {
+  100% {
+      opacity: 0;
+      transform: scale(2.5);
+  }
+}
+
+
+/*----------------------------*/
+:focus {
+  outline: none;
+}
+
+.alumnos h2 .alumnos label {
+  font-family: Georgia, Times, "Times New Roma,"serif;
+}
+
+.form_hint,
+.required_notification {
+  font-size: 11px;
+}
+
+.alumnos ul {
+  width: 400px;
+  list-style-type: none;
+  list-style-position: outside;
+  margin: auto;
+  padding: 10px;
+  
+}
+
+.alumnos li {
+  padding: 20px;
+  border-bottom: .5px solid #eee;
+  position: relative;
+}
+
+.alumnos li:first-child{
+  border-bottom: 5px solid #777;
+}
+
+.alumnos h2 {
+  margin: 0;
+  display: inline;
+}
+
+.required_notification {
+  color: rgb(212, 82, 82);
+  margin: 5px 0 0 0;
+  display: inline;
+  float: right;
+}
+
+.alumnos laabel {
+  width: 10px;
+  margin-top: 3px;
+  display: inline-block;
+  padding: 3px;
+}
+
+.alumnos input {
+  height: 20px;
+  width: 220px;
+  padding: 5px 8px;
+}
+
+.alumnos textarea {
+  padding: 30px;
+  width: 300px;
+}
+
+alumnos button {
+  margin-left: 156px;
+}
+
+.alumnos input,
+.alumnos textarea {
+  border: 1px solid #aaa;
+  box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+  border-radius: 2px;
+  padding-right: 30px;
+  -moz-transition: padding .25s;
+  -webkit-transition: padding .25;
+  -o-transition: padding .25s;
+  transition: padding .25s;
+}
+
+.alumnos input:focus,
+.alumnos textarea:focus {
+  background: #fff;
+  border: 1px solid #555;
+  box-shadow: 0 0 3px #aaa;
+  padding-right: 70px;
+}
+
+.alumnos input:focus:invalid,
+.alumnos textareas:focus:invalid {
+  background: #fff url(imagenes/invalid.png) no-repeat 98% center;
+  box-shadow: 0 0 5px #d45252;
+  border-color: #b03535;
+}
+
+.form_hint {
+  background: #d45252;
+  border-radius: 3px 3px 3px 3px;
+  color: white;
+  margin-left: 8px;
+  padding: 1px 6px;
+  z-index: 999;
+  position: absolute;
+  display: none;
+}
+
+.form_hint:before {
+  content: "\25C0";
+  color: #d45252;
+  position: absolute;
+  top: 1px;
+  left: -6px;
+}
+
+.alumnos input:focus + .form_hint {
+  display: inline;
+}
+
+.alumnos input:required:valid + .form_hint {
+  background: #28921f;
+}
+
+/*.a;*/
+
+umnos input:required:valid + .form_hint::before {
+  color: rgb(40, 146, 31);
+}
+
+/*button.sumit {
+  background-color: #68b12f;
+  background: -webkit-gradiant(linear, left top, left bottom, from(#68b12f). to(#50911e));
+  background: -webkit-linear-gradient(top, #68b12f, #50911e);
+  background: -moz-linear-gradient(top, #68b12f, #50911e);
+  background: -ms-linear-gradient(top, #68b12f, #50911e);
+  background: -o-linear-gradient(top, #68b12f, #50911e);
+  border: 1px solid #509111;
+  border-bottom: 1px solid #5b992b;
+
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+
+  box-sizing: inset 0 1px 0 0 #9fd574;
+  -webkit-box-shadow: 0 1px 0 0 #9fd574 inset;
+  -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+  -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+  -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+  color: white;
+  font-weight: bold;
+  padding: 6px 20px;
+  text-align: center;
+  text-shadow: 0 -1px 0 #396715;
+}*/
+
+button.submit:hover {
+  opacity: .85;
+  cursor: pointer;
+}
+
+button.submit:active {
+  border: 1px solid #20911e;
+  box-shadow: 0 0 10px 5px #356b0b inset;
+  -webkit-box-shadow: 0 0 10px 5px #356b0b inset;
+  -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+  -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+  -o-box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+@media screen and (max-width: 800px) {
+  
+}
